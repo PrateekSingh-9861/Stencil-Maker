@@ -1,0 +1,73 @@
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: 'Segoe UI', sans-serif;
+   background: linear-gradient(to right, #f7f7f7, #e3e3e3);
+   margin: 0;
+   text-align: center;
+ }
+
+ h1 {
+   color: #222;
+   margin: 10px 0 5px 0;
+   /* Reduced space around heading */
+ }
+
+ p {
+   color: #555;
+   font-size: 16px;
+   margin: 0 0 10px 0;
+   /* Tight spacing under paragraph */
+ }
+
+ input[type="file"] {
+   margin: 8px 0;
+ }
+
+ #controls {
+   margin: 8px 0;
+ }
+
+ button {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease;
+   cursor: pointer;
+ }
+
+ button:hover {
+   background-color: #388e3c;
+   transform: translateY(-2px);
+ }
+
+ #canvas-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 20px;
+   /* Reduced gap between canvases */
+   margin-top: 10px;
+ }
+
+ canvas {
+   width: 90vw;
+   max-width: 800px;
+   height: auto;
+   border: 2px solid #ddd;
+   border-radius: 12px;
+   background-color: #fff;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ }
+
+ @media (min-width: 900px) {
+   canvas {
+     width: 45vw;
+   }
+ }
